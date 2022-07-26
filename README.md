@@ -1,8 +1,8 @@
 # Callbacks-Framework-SMP
 [![version][version_badge]][changelog]
-[![CodeFactor][codefactor_badge]](https://www.codefactor.io/repository/github/regorxxx/Statistics-Framework-SMP/overview/main)
-[![CodacyBadge][codacy_badge]](https://www.codacy.com/gh/regorxxx/Statistics-Framework-SMP/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=regorxxx/Statistics-Framework-SMP&amp;utm_campaign=Badge_Grade)
-![GitHub](https://img.shields.io/github/license/regorxxx/Statistics-Framework-SMP)  
+[![CodeFactor][codefactor_badge]](https://www.codefactor.io/repository/github/regorxxx/Callbacks-Framework-SMP/overview/main)
+[![CodacyBadge][codacy_badge]](https://www.codacy.com/gh/regorxxx/Callbacks-Framework-SMP/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=regorxxx/Callbacks-Framework-SMPP&amp;utm_campaign=Badge_Grade)
+![GitHub](https://img.shields.io/github/license/regorxxx/Callbacks-Framework-SMP)  
 A helper script for [Spider Monkey Panel](https://theqwertiest.github.io/foo_spider_monkey_panel) and [foobar2000](https://www.foobar2000.org) which allows to easily attach and manage event listeners associated to SMP callbacks without wrapping or repeating code.  A lifesaver. 
 
 ## The problem with current SMP callbacks
@@ -56,6 +56,6 @@ Since the framework only requires 1 file, i.e. the main one, you can simply incl
 ![carbon(1)](https://user-images.githubusercontent.com/83307074/181011693-6f737dc4-0a86-4e2a-be2a-aa168128f1b1.png)
 
 [changelog]: CHANGELOG.md
-[version_badge]: https://img.shields.io/github/release/regorxxx/Statistics-Framework-SMP.svg
+[version_badge]: https://img.shields.io/github/release/regorxxx/Callbacks-Framework-SMP.svg
 [codacy_badge]: https://api.codacy.com/project/badge/Grade/3e59f8dccd204721a7801197d6c336ed
-[codefactor_badge]: https://www.codefactor.io/repository/github/regorxxx/Statistics-Framework-SMP/badge/main
+[codefactor_badge]: https://www.codefactor.io/repository/github/regorxxx/Callbacks-Framework-SMP/badge/main
