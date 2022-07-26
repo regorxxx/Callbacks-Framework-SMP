@@ -19,6 +19,7 @@ Using this framework it would translate into this:
 - Removes event listeners on demand.
 - Allows to find if an event listener is active.
 - Mimics [mozilla implementation](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener).
+- Implements [SPM planned design](https://github.com/TheQwertiest/foo_spider_monkey_panel/projects/1).
 - Bypasess common limitation of including files with existing callbacks, wrapping, etc.
 
 ## Usage
