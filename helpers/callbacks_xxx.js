@@ -1,5 +1,5 @@
 'use strict';
-//26/07/22
+//12/08/22
 
 /*
 	Usage:
@@ -10,6 +10,8 @@
 			removeEventListener('on_mouse_lbtn_up', listener); // Previous id may also be useds	
 		- findEventListener(): to find if some listener is attached to a callback. For ex:
 			const idx = findEventListener('on_mouse_lbtn_up', listener); // -1 since it has been previously removed
+		- removeEventListeners(): to remove all listeners atached to a callback. For ex:
+			removeEventListeners('on_focus'); // true
 			
 		Following [mozilla implementation](https://developer.mozilla.org/es/docs/Web/API/EventTarget/removeEventListener)
 		event listeners may be removed using their UUID or event listener function itself.
@@ -17,7 +19,7 @@
 		removeEventListener() accepts both the listener (2nd arg) or UUID (3rd arg) as arguments.
 		
 		Callback registering is done under the hood automatically although it may be done manually using
-		registerCallback() or registerCallback(). Note registering a callback multiple times will effectively duplicate
+		registerCallback() or registerAllCallbacks(). Note registering a callback multiple times will effectively duplicate
 		the listener calls, so it should be avoided. Removing all listeners associated to a callback will not unregister
 		the callback itself, which would be an undesirable effect in some cases and harmless in any other case.
 		
@@ -97,7 +99,7 @@ const callbacks = {
 const parentWindow = this; // This is Window in this context without SMP wrapping
 
 function addEventListener(event, listener, bRegister = true) {
-	if (!callbacks.hasOwnProperty(event)) {return false;}
+	if (!callbacks.hasOwnProperty(event)) {console.log('addEventListener: event does not exist -> ' + event); return false;}
 	const id = UUID();
 	callbacks[event].listeners.push({id, listener});
 	if (bRegister && !callbacks[event].bRegistered) {registerCallback(event);} // Only add those callbacks needed to the global context
@@ -118,6 +120,16 @@ function removeEventListener(event, listener = null, id = null) {
 	if (!listener && !id) {return false;}
 	const idx = findEventListener(event, listener, id);
 	return idx !== -1 && callbacks[event].listeners.splice(idx, 1);
+}
+
+function removeEventListeners(event) {
+	if (Array.isArray(event)) {
+		event.forEach((ev) => {removeEventListeners(ev);});
+	} else {
+		if (!callbacks.hasOwnProperty(event)) {console.log('removeEventListeners: event does not exist -> ' + event); return false;}
+		callbacks[event].listeners = [];
+	}
+	return true;
 }
 
 /*
