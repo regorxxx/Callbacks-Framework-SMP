@@ -2,10 +2,18 @@
 
 ## [Table of Contents]
 - [Unreleased](#unreleased)
+- [1.1.0](#110---2022-08-12)
 - [1.0.0](#100---2022-07-26)
 
 ## [Unreleased][]
 ### Added
+### Changed
+### Removed
+### Fixed
+
+## [1.1.0] - 2022-08-12
+### Added
+- removeEventListeners: new function 'removeEventListeners(event)' to remove all listeners attached to a callback. Event may be a string or array of strings with the name of callbacks to remove, i.e. 'on_playlists_changed' or  ['on_playlists_changed', 'on_script_unload'].
 ### Changed
 ### Removed
 ### Fixed
@@ -17,5 +25,6 @@
 ### Removed
 ### Fixed
 
-[Unreleased]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/997dd95...v1.0.0
