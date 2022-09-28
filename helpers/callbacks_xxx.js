@@ -134,7 +134,7 @@ function removeEventListeners(event) {
 }
 
 // Should only be called within an event listener, since 'this' points to 'parentWindow'
-const removeEventListenerItself = () => {return removeEventListener(this.eventListener.event, null, this.eventListener.id);}
+const removeEventListenerSelf = () => {return removeEventListener(this.eventListener.event, null, this.eventListener.id);}
 
 /*
 	Register callbacks

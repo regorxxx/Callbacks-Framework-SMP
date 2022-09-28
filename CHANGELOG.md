@@ -15,7 +15,7 @@
 ## [1.2.0] - 2022-09-28
 ### Added
 - parentWindow.eventListener: added new property to 'this' within event listeners scope. It may be used to remove itself after execute it once for ex. Contains name of the callback (event) and listener id.
-- removeEventListenerItself: shorthand to 'removeEventListener(this.eventListener.event, null, this.eventListener.id)' within event listeners scope.
+- removeEventListenerSelf: shorthand to 'removeEventListener(this.eventListener.event, null, this.eventListener.id)' within event listeners scope.
 ### Changed
 ### Removed
 ### Fixed
