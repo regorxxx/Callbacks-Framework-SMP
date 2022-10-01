@@ -2,6 +2,7 @@
 
 ## [Table of Contents]
 - [Unreleased](#unreleased)
+- [1.2.1](#121---2022-10-01)
 - [1.2.0](#120---2022-09-28)
 - [1.1.0](#110---2022-08-12)
 - [1.0.0](#100---2022-07-26)
@@ -11,6 +12,13 @@
 ### Changed
 ### Removed
 ### Fixed
+
+## [1.2.1] - 2022-10-01
+### Added
+### Changed
+### Removed
+### Fixed
+- Crash due to non defined this when adding a single listener to the stack.
 
 ## [1.2.0] - 2022-09-28
 ### Added
@@ -34,7 +42,8 @@
 ### Removed
 ### Fixed
 
-[Unreleased]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/regorxxx/Callbacks-Framework-SMP/compare/997dd95...v1.0.0
