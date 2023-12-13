@@ -1,0 +1,1 @@
+See full [changelog here](https://github.com/regorxxx/Callbacks-Framework-SMP/blob/main/CHANGELOG.md).
